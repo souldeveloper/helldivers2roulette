@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de la Suerte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecera">
+            <img src="./imagenes/spindeatheditado.jpg" height="200" width="1024" alt="">
+        </div>
+        <div class="titulo">
+            <h2>HELLDIVERS II ROULETTE OF DEATH</h2>
+            <p>Página web creada por el canal de <span class="resalto">YouTube de Pachanguitas</span>, simple y llanamente por diversión</p>
+            <p>Selecciona entre una de las opciones para elegir un arma, orbital, mortero, etc.... <span class="resalto">diviertete</span></p>
+        </div>
+        <div class="ruletas">
+            <div class="ruleta-container">
+                <div class="ruleta" id="ruleta1"></div>
+                <button class="spinButton" data-ruleta="1">Arma Principal</button>
+                <div class="resultado" id="resultado1"></div>
+            </div>
+            <div class="ruleta-container">
+                <div class="ruleta" id="ruleta2"></div>
+                <button class="spinButton" data-ruleta="2">Arma Secundaria</button>
+                <div class="resultado" id="resultado2"></div>
+            </div>
+            <div class="ruleta-container">
+                <div class="ruleta" id="ruleta3"></div>
+                <button class="spinButton" data-ruleta="3">Granada</button>
+                <div class="resultado" id="resultado3"></div>
+            </div>
+            <div class="ruleta-container">
+                <div class="ruleta" id="ruleta4"></div>
+                <button class="spinButton" data-ruleta="4">Armas de Apoyo</button>
+                <div class="resultado" id="resultado4"></div>
+            </div>
+            <div class="ruleta-container">
+                <div class="ruleta" id="ruleta5"></div>
+                <button class="spinButton" data-ruleta="5">Orbitales</button>
+                <div class="resultado" id="resultado5"></div>
+            </div>
+            <div class="ruleta-container">
+                <div class="ruleta" id="ruleta6"></div>
+                <button class="spinButton" data-ruleta="6">Morteros</button>
+                <div class="resultado" id="resultado6"></div>
+            </div>
+            <div class="ruleta-container">
+                <div class="ruleta" id="ruleta7"></div>
+                <button class="spinButton" data-ruleta="7">Aguilas</button>
+                <div class="resultado" id="resultado7"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

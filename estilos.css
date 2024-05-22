@@ -1,0 +1,117 @@
+/* styles.css */
+*{
+    font-family: "Chakra Petch", "sans-serif";
+    font-weight: bold;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.cabecera{
+    margin-top: 20px;
+}
+.titulo h2{
+    font-size: 60px;
+}
+.resalto{
+    background-color: red ;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+.container {
+    text-align: center;
+    height: 100%;
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.ruletas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.ruleta-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ruleta {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 4s ease-out;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 17px -2px rgba(28,28,28,1);
+    -moz-box-shadow: 0px 0px 17px -2px rgba(28,28,28,1);
+    box-shadow: 0px 0px 17px -2px rgba(28,28,28,1);
+}
+
+.segmento {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    
+}
+
+.spinButton {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 77px 77px 77px 77px;
+    -moz-border-radius: 77px 77px 77px 77px;
+    -webkit-border-radius: 77px 77px 77px 77px;
+    border: 3px solid #000000;
+}
+
+.resultado {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .ruletas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ruleta-container {
+        flex: 1 1 calc(33.33% - 20px);
+        margin: 10px;
+    }
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 767px) {
+    .ruletas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ruleta-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
